@@ -25,3 +25,38 @@
 
 .faq-section h1,.faq-section h2,.faq-section summary{font-size:20px}.faq-section details p{font-size:14px}
 .footer-order{display:inline-block;padding:8px 12px;border-radius:5px;background:var(--green);color:#fff!important;font-weight:700}.floating-order{position:fixed;z-index:20;left:50%;bottom:14px;transform:translateX(-50%);display:inline-flex;align-items:center;justify-content:center;gap:12px;width:min(410px,calc(100% - 28px));padding:14px 18px;border-radius:999px;background:var(--green);color:#fff;text-decoration:none;font:700 14px "Noto Sans Devanagari",sans-serif;box-shadow:0 10px 25px #173d2545;transition:opacity .2s,transform .2s}.floating-order span{font-size:20px}.floating-order.is-hidden{opacity:0;pointer-events:none;transform:translate(-50%,12px)}
+.site-header{height:72px;padding:0 18px;gap:12px;background:rgba(255,253,246,.96);border-bottom:1px solid #d9e4d0;box-shadow:0 5px 18px #173d2512;position:sticky;top:0;z-index:50;backdrop-filter:blur(12px)}.brand{display:flex;align-items:center;gap:9px;min-width:0;color:var(--green);text-decoration:none}.brand-mark{display:grid;place-items:center;width:34px;height:34px;border:1px solid var(--gold);border-radius:50%;background:#f3f6e6;color:var(--green);font:700 12px Georgia,serif;letter-spacing:.02em}.brand strong{font-size:15px;letter-spacing:.12em;white-space:nowrap}.header-order{display:inline-flex;align-items:center;gap:6px;padding:10px 12px;border:1px solid #b5cda5;border-radius:999px;background:#edf5e2;color:var(--green);font:700 11px "Noto Sans Devanagari",sans-serif;text-decoration:none;white-space:nowrap;box-shadow:0 4px 10px #173d2510}.header-order span{font-size:16px;line-height:1}.header-order:hover{background:var(--green);color:#fff;transform:translateY(-1px)}
+
+/* Consistent borders around every landing-page section */
+main > section,
+main > section > section{
+  border:1px solid #cbd9bf;
+  border-radius:10px;
+  overflow:hidden;
+}
+main > section + section{margin-top:8px}
+
+/* Use the full mobile content width around the hero CTA */
+.hero-copy{width:100%}
+.hero-copy{padding:0!important;margin-top:-14px}
+.hero-actions{width:100%;margin:0}
+.hero-actions .button-primary{width:100%;min-height:52px;border-radius:0}
+
+/* Side breathing room for every section except the full-bleed first section */
+.symptoms{padding-left:14px;padding-right:14px}
+.order{padding-left:0!important;padding-right:0!important}
+.section-three-heading{margin-left:14px;margin-right:14px}
+.section-three-product{width:calc(100% - 28px);margin-left:14px;margin-right:14px}
+.section-four,.section-five,.section-six,.section-seven,.section-eight{
+  padding-left:14px!important;
+  padding-right:14px!important;
+}
+
+/* Keep the same side padding on every section except section 1 */
+main > section:not(.hero),
+main > section > section{
+  padding-left:14px!important;
+  padding-right:14px!important;
+}
+.section-three-heading{margin-left:0;margin-right:0}
+.section-three-product{width:100%;margin-left:0;margin-right:0}
