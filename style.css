@@ -166,3 +166,17 @@ main > section > section{
 .testimonial-grid p,
 .offer-points li{font-size:20px!important;line-height:1.4}
 .hero-symptom h2{font-size:20px!important;line-height:1.35}
+
+/* Final global type scale for every section */
+main h1,main h2{font-size:24px!important}
+main h3,main summary,.offer-points li{font-size:20px!important;line-height:1.4}
+
+/* Remove accidental gaps between sections and inherited image margins */
+main > section + section,
+.order > section,
+.section-four,.section-five,.section-six,.section-seven,
+.special-offer,.section-eight{margin-top:0!important}
+.section-three-product,
+.quality-trust-image,
+.section-four img,.section-five img,.section-six img,.section-seven img,.section-eight img{margin-top:0!important}
+.quality-trust-image{margin-bottom:0!important}
