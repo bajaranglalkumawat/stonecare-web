@@ -60,3 +60,109 @@ main > section > section{
 }
 .section-three-heading{margin-left:0;margin-right:0}
 .section-three-product{width:100%;margin-left:0;margin-right:0}
+
+/* Section 1: keep the banner composition, but make all copy real HTML */
+.hero-html{
+  min-height:0;
+  display:block;
+  padding:0!important;
+  border:0!important;
+  border-radius:0!important;
+  background:linear-gradient(180deg,#fbf9ed 0%,#fbf9ed 74%,#e7efd9 100%);
+}
+.hero-html .hero-copy{padding:28px 24px 24px!important;margin:0;width:100%;position:relative}
+.hero-brand{margin:0 0 28px;color:var(--green);font-size:18px;font-weight:800;letter-spacing:.12em}
+.hero-html h1{margin:0 0 28px;text-align:center;color:var(--green);font:800 clamp(30px,8vw,42px)/1.22 "Noto Sans Devanagari",sans-serif;letter-spacing:-.05em}
+.hero-html h1 em{color:var(--green);font-style:normal}
+.hero-symptoms{display:grid;gap:22px}
+.hero-symptom{display:grid;grid-template-columns:52% 48%;align-items:center;gap:10px;min-width:0}
+.hero-photo{height:150px;position:relative;overflow:visible}
+.hero-photo img{display:block;width:100%;height:100%;object-fit:cover;border-radius:16px;filter:saturate(.82)}
+.hero-organ{position:absolute;right:-25px;bottom:-5px;width:66px;height:66px;display:grid;place-items:center;border:2px solid var(--green);border-radius:50%;background:#fff9df;font-size:32px;color:#c56d58;box-shadow:0 2px 0 #fff}
+.hero-organ-green{color:#718b3e;background:#edf3dc}
+.hero-organ-pink{color:#b56c7a;background:#fff0e7}
+.hero-symptom h2{margin:0 0 0 22px;color:#111;font:800 clamp(18px,5.2vw,27px)/1.28 "Noto Sans Devanagari",sans-serif;letter-spacing:-.035em}
+.hero-html .hero-actions{margin:26px 0 0}
+.hero-html .hero-actions .button-primary{border-radius:5px}
+@media(max-width:760px){
+  .hero-html .hero-copy{padding:25px 24px 22px!important}
+  .hero-brand{font-size:16px;margin-bottom:24px}
+  .hero-html h1{font-size:clamp(29px,8vw,36px);margin-bottom:25px}
+  .hero-symptoms{gap:20px}
+  .hero-symptom{grid-template-columns:52% 48%;gap:8px}
+  .hero-photo{height:128px}
+  .hero-organ{right:-22px;width:58px;height:58px;font-size:27px}
+  .hero-symptom h2{margin-left:19px;font-size:clamp(17px,5vw,23px)}
+}
+
+/* HTML replacements for the remaining template sections */
+.symptom-html-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.symptom-html-card{background:#fffdf6;border:1px solid #d2dfc8;border-radius:14px;padding:10px;box-shadow:0 6px 18px #29482a12}
+.symptom-html-card img{display:block;width:100%;height:125px;object-fit:cover;border-radius:10px}
+.symptom-html-card h3{margin:10px 3px 4px;color:#152e1d;font:700 16px/1.35 "Noto Sans Devanagari",sans-serif}
+.care-html-block{padding:20px 14px 30px;text-align:center;background:#eef6dd;border-radius:14px}
+.care-html-block>p{max-width:390px;margin:0 auto 20px;color:#516752;font-size:14px;line-height:1.65}
+.care-html-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;text-align:left}
+.care-html-grid article{display:grid;grid-template-columns:45% 55%;align-items:center;gap:8px}
+.care-html-grid img{width:100%;height:92px;object-fit:cover;border-radius:14px}
+.care-html-grid article:last-child img{object-fit:contain;background:#fff}
+.care-html-grid h3{margin:0;color:var(--green);font:800 16px/1.25 "Noto Sans Devanagari",sans-serif}
+.section-four h2,.section-five h2,.section-six h2,.section-seven h2,.section-eight h2{margin:0;color:var(--green);font:800 clamp(25px,7vw,36px)/1.2 "Noto Sans Devanagari",sans-serif;text-align:center}
+.section-four>p,.section-five>p,.section-seven>p{text-align:center;color:#607162;font-size:14px;line-height:1.6}
+.how-grid,.ingredient-grid,.routine-grid,.trust-grid,.testimonial-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:20px}
+.how-grid article,.ingredient-grid article,.routine-grid article,.trust-grid article,.testimonial-grid article{background:#fffdf6;border:1px solid #d2dfc8;border-radius:14px;padding:12px;box-shadow:0 6px 18px #29482a0d}
+.how-grid img{display:block;width:100%;height:110px;object-fit:cover;border-radius:10px;margin-bottom:10px}
+.how-grid h3,.ingredient-grid h3,.routine-grid h3{margin:0;color:#183a23;font:700 15px/1.35 "Noto Sans Devanagari",sans-serif}
+.ingredient-grid img{display:block;width:100%;height:120px;object-fit:contain;border-radius:50%;background:#f4f8e9}
+.routine-grid article{position:relative}.routine-grid span{position:absolute;z-index:1;left:12px;top:12px;background:var(--green);color:#fff;border-radius:50%;padding:7px 9px;font-weight:800;font-size:12px}.routine-grid img{display:block;width:100%;height:115px;object-fit:cover;border-radius:10px;margin-bottom:10px}
+.routine-grid .routine-product{object-fit:contain;background:#f1f5e6;padding:8px}
+.trust-grid article{text-align:center;min-height:100px;display:grid;place-content:center;gap:6px;background:#edf6e4}.trust-grid strong{font-size:24px;color:var(--green)}.trust-grid span{font-size:11px;color:#627563}
+.testimonial-grid article{text-align:center}.testimonial-grid img{display:block;width:92px;height:92px;border-radius:50%;object-fit:cover;margin:0 auto 10px;border:3px solid #fff;box-shadow:0 3px 10px #173d2524}.testimonial-grid p{margin:0;color:#415844;font-size:13px;line-height:1.55}.testimonial-grid strong{color:var(--green)}
+@media(max-width:480px){.symptom-html-grid{gap:10px}.symptom-html-card{padding:8px}.symptom-html-card img{height:105px}.symptom-html-card h3{font-size:14px}.care-html-grid{gap:11px}.care-html-grid article{display:block}.care-html-grid img{height:100px;margin-bottom:7px}.care-html-grid h3{font-size:14px}.how-grid,.ingredient-grid,.routine-grid,.trust-grid,.testimonial-grid{gap:10px}.how-grid article,.ingredient-grid article,.routine-grid article,.trust-grid article,.testimonial-grid article{padding:9px}.how-grid img{height:92px}.ingredient-grid img{height:100px}.routine-grid img{height:100px}.testimonial-grid img{width:76px;height:76px}}
+
+/* Final visual polish */
+.symptoms{background:#f2f6e7;padding-top:0!important;padding-bottom:28px!important}
+.symptoms .section-heading{display:block;margin:0;padding:28px 8px 20px}
+.symptoms .section-heading h2{font-size:clamp(25px,7vw,34px);line-height:1.25;color:var(--green)}
+.symptoms .section-heading .eyebrow{margin-bottom:8px}
+.order{background:#fbf9ed}
+.section-three-heading{padding:28px 10px 15px;background:#fbf9ed;text-align:center}
+.section-three-heading h2{margin:0;color:var(--green);font:800 clamp(27px,7vw,38px)/1.2 "Noto Sans Devanagari",sans-serif}
+.section-three-product{display:block;width:min(100%,250px)!important;height:auto;margin:0 auto 24px!important;border-radius:18px;box-shadow:0 12px 25px #173d2522}
+.care-html-block{margin:0 0 18px}
+.section-four,.section-five,.section-six,.section-seven,.section-eight{padding-top:28px!important;padding-bottom:28px!important;background:#fbf9ed}
+.section-four>p,.section-five>p,.section-seven>p{margin:9px auto 0;max-width:380px}
+.section-four,.section-five,.section-six,.section-seven{margin-top:12px!important}
+.special-offer{margin-top:12px!important}
+.section-eight{margin-top:12px!important}
+.quality-trust-image{display:block;width:100%;height:auto;border-radius:12px;object-fit:contain}
+.special-offer{position:relative;overflow:hidden;background:radial-gradient(circle at 50% 36%,#ffffffb8 0 16%,transparent 42%),linear-gradient(145deg,#eff8df,#fff9e7);padding-top:30px!important;padding-bottom:30px!important}
+.special-offer::before,.special-offer::after{content:"";position:absolute;border:1px solid #c6d9af;border-radius:50%;pointer-events:none}.special-offer::before{width:180px;height:180px;left:-105px;top:75px}.special-offer::after{width:220px;height:220px;right:-145px;bottom:-110px}
+.offer-product-wrap{position:relative;z-index:1;display:flex;align-items:center;justify-content:center;gap:12px;width:min(100%,290px);height:172px;margin:4px auto 14px;border-radius:20px;background:#e5f0d3aa;border:1px solid #c7dcb4;box-shadow:inset 0 0 25px #fff8}
+.offer-product-image{display:block;width:175px;height:168px;object-fit:contain;filter:drop-shadow(0 9px 8px #173d2530)}
+.offer-product-wrap>span{display:grid;place-items:center;width:58px;height:58px;border:1px solid #b6ce9d;border-radius:50%;background:#fff8dd;color:var(--green);font:700 10px/1.15 "Noto Sans Devanagari",sans-serif;text-align:center;transform:rotate(8deg)}
+.special-offer .offer-points,.special-offer .offer-button{position:relative;z-index:1}
+@media(max-width:480px){.offer-product-wrap{height:155px;width:min(100%,270px)}.offer-product-image{width:158px;height:150px}.offer-product-wrap>span{width:52px;height:52px;font-size:9px}}
+.symptom-html-card img{height:auto!important;aspect-ratio:auto;object-fit:contain;background:#eef4e2}
+
+/* Unified typography requested for the landing page */
+.hero-html h1,
+.section-heading h2,
+.section-three-heading h2,
+.section-four>h2,
+.section-five>h2,
+.section-six>h2,
+.section-seven>h2,
+.section-eight>h2,
+.special-offer h2,
+.faq-section h1,
+.disclaimer h2,
+.order h2{font-size:24px!important}
+.symptom-html-card h3,
+.care-html-grid h3,
+.how-grid h3,
+.ingredient-grid h3,
+.routine-grid h3,
+.testimonial-grid p,
+.offer-points li{font-size:20px!important;line-height:1.4}
+.hero-symptom h2{font-size:20px!important;line-height:1.35}
