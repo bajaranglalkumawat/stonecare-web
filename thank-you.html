@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>धन्यवाद | Stono Care</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Noto+Sans+Devanagari:wght@500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="thank-page">
+  <main class="thank-card"><div class="thank-mark">✓</div><p class="eyebrow"><span></span> आपका अनुरोध मिल गया</p><h1>धन्यवाद<span id="customerName"></span>!</h1><p>आपकी जानकारी सुरक्षित रूप से भेज दी गई है। हमारी wellness team जल्द ही आपसे संपर्क करेगी।</p><a class="button button-primary" href="index.html">वापस होम पर जाएं <span>→</span></a></main>
+  <script>const name=sessionStorage.getItem('stonoCustomer');document.getElementById('customerName').textContent=name?`, ${name}`:'';</script>
+</body>
+</html>
